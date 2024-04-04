@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Question 1</title>
+    </head>
+    <body>
+        <h2>Use JavaScript to change HTML content</h2>
+        <p id="p1">The original content</p>
+        <button onclick="changeit()">Try it</button>
+        <script>
+            function changeit() {
+                var paragraph = document.getElementById("p1");
+                paragraph.textContent = "Paragraph changed.";
+            }
+        </script>
+    </body>
+</html>

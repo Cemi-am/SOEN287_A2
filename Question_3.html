@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Question 3</title>
+    </head>
+    <body>
+        <h2>JavaScript Functions</h2>
+        <p id="addNumbers"></p>
+        <p id="findMaxNumber"></p>
+        <p id="addOnlyNumbers"></p>
+        <p id="getDigits"></p>
+        <p id="reverseString"></p>
+        <p id="getCurrentDate"></p>
+        
+        <script src="q3.js"></script>
+        <script>
+            //addNumbers
+            const numbersA = [0,1,1,2,3,5,8];
+            let sumA = addNumbers(numbersA);
+            document.getElementById("addNumbers").innerHTML = "addNumbers = " + sumA;
+
+            //findMaxNumber
+            let maxnb = findMaxNumber(1,2,3,5,8,2,-10,4);
+            document.getElementById("findMaxNumber").innerHTML = "findMaxNumber = " + maxnb;
+
+            //addOnlyNumbers
+            const mixedArray = [4, 5, "3.0 birds", true, "birds2"];
+            let sumC = addOnlyNumbers(mixedArray);
+            document.getElementById("addOnlyNumbers").innerHTML = "addOnlyNumbers = " + sumC;
+
+            //getDigits
+            let stringdigit = "h1n23g24jadf2";
+            let digitString = getDigits(stringdigit)
+            document.getElementById("getDigits").innerHTML = "getDigits = " + digitString;
+
+            //reverseString
+            let stringtorev = "Hello ?";
+            let reversed = reverseString(stringtorev)
+            document.getElementById("reverseString").innerHTML = "reverseString = " + reversed;
+
+            //getCurrentDate
+            let currentDate = getCurrentDate();
+            document.getElementById("getCurrentDate").innerHTML = "getCurrentDate = " + currentDate ;
+
+        </script>
+    </body>
+</html>

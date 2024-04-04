@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Question 4</title>
+        <style>
+            table {
+                border-style: solid;
+                padding: 10px
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Order Books Online</h2>
+        <table id="table">
+            <tr>
+                <th>Book</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Basic Web Programming</td>
+                <td>
+                    <input type="text" id="it1" name="it1" pattern="[0-9]*">
+                </td>
+                <td>$19.99</td>
+            </tr>
+            <tr>
+                <td>Intro to PHP</td>
+                <td>
+                    <input type="text" id="it2" name="it2" pattern="[0-9]*">
+                </td>
+                <td>$86.00</td>
+            </tr>
+            <tr>
+                <td>Advandced JQuery</td>
+                <td>
+                    <input type="text" id="it3" name="it3" pattern="[0-9]*">
+                </td>
+                <td>$55.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <br><button onclick="calcTotal()">Calculate the order</button>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <p id="pricebreakdown"></p>
+        <p id="totalcost"></p>
+        <br><br><br>
+        <script src="q4.js"></script>
+    </body>
+</html>

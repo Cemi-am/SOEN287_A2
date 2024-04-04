@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Question 5</title>
+        <script>            
+            function getUserInfo() {
+                let name = prompt("What is your full name?");
+                let age = prompt("How old are you?");
+                let userString =  "Hi, my name is " + name + " and I'm " + age + " years old.";
+                document.getElementById("content").innerHTML = userString;
+            }
+            window.onload = getUserInfo;
+        </script>
+    </head>
+    <body>
+        <p><strong>User Information:</strong></p>
+        <p id="content"></p>
+    </body>
+</html>
